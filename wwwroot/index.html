@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>SystemJS Import Issue</title>
+    <script src="https://cdn.jsdelivr.net/npm/systemjs/dist/system.js"></script>
+    <script>
+      System.import("/module1.js").then(m => (document.getElementById("mod1").innerText = m.default()));
+      System.import("/module2.js").then(m => (document.getElementById("mod2").innerText = m.default()));
+    </script>
+  </head>
+  <body>
+    <div id="mod1"></div>
+    <div id="mod2"></div>
+  </body>
+</html>
