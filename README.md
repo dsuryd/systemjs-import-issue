@@ -3,7 +3,7 @@ Reproduction of the issue with SystemJS dynamic import.
 SystemJS.import is used to load two almost-identical modules that export a function. Only the first one was loaded. 
 
 index.html:
-```
+```html
   <head>
     ...
     <script src="https://cdn.jsdelivr.net/npm/systemjs/dist/system.js"></script>
