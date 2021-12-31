@@ -20,7 +20,7 @@ index.html:
 
 Expected output:
 
-MODULE 1
+MODULE 1<br/>
 MODULE 2
 
 Actual:
