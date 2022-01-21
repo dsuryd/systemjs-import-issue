@@ -9,7 +9,8 @@ module.exports = {
   output: {
     filename: "[name].js",
     path: path.resolve(__dirname, "wwwroot"),
-    libraryTarget: "umd"
+    libraryTarget: "umd",
+    publicPath: '/'
   },
   resolve: {
     extensions: [".tsx", ".ts", ".js"]
